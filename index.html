@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coach Diet Turun Berat Badan</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Font Awesome for TikTok -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+  <!-- Poppins Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #efdbbf;
+      --cherry: #ac3030;
+      --deep-red: #68181f;
+      --midnight: #121211;
+    }
+    body { font-family: 'Poppins', sans-serif; background-color: var(--cream); color: var(--midnight); }
+    a { text-decoration: none; }
+    .navbar { background-color: var(--midnight); }
+    .navbar-brand, .nav-link { color: var(--cream) !important; }
+    #mainBanner { background: var(--deep-red) url('https://via.placeholder.com/1200x600') center/cover no-repeat; color: #fff; padding: 100px 0; text-align: center; }
+    #mainBanner h1 { font-size: 2.5rem; font-weight: 600; }
+    #mainBanner p { font-size: 1.2rem; }
+    .btn-wa { background-color: var(--cherry); color: #fff; border: none; }
+    .btn-wa:hover { background-color: var(--deep-red); }
+    .social-btn { color: var(--midnight); font-size: 1.5rem; margin: 0 0.5rem; transition: transform .2s; }
+    .social-btn:hover { transform: scale(1.2); color: var(--cherry); }
+    /* Coach Profile */
+    #coachProfile img { width: 300px; height: 300px; object-fit: cover; border-radius: 20px; border: 4px solid var(--cherry); }
+.testimonial-img {
+  width: 450px;
+  height: 450px;
+  object-fit: contain;
+  border-radius: 20px; /* rounded square */
+  margin: 0 auto 15px;
+}
+    .carousel-control-prev-icon, .carousel-control-next-icon { filter: invert(100%); width: 40px; height: 40px; }
+    footer { background-color: var(--midnight); color: var(--cream); padding: 20px 0; text-align: center; }
+    /* Programs box */
+    .program-box { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 30px; background: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); min-height: 300px; }
+    .program-box i { font-size: 3rem; color: var(--cherry); margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Coach Putri</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon" style="filter: invert(100%);"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#programs">Program</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimoni</a></li>
+          <li class="nav-item"><a class="nav-link btn-wa px-3 ms-3" href="#contact">Hubungi</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Banner -->
+  <section id="mainBanner">
+    <div class="container">
+      <h1>Transformasikan Tubuh Anda Bersama Coach Profesional</h1>
+      <p>Program diet yang dipersonalisasi untuk hasil nyata dan berkelanjutan.</p>
+      <a href="#contact" class="btn btn-wa btn-lg mt-3">Hubungi Coach Sekarang</a>
+    </div>
+  </section>
+
+  <!-- Programs -->
+  <section id="programs" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4" style="color: var(--deep-red)">Apa yang Anda Dapatkan?</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="program-box">
+            <i class="bi bi-egg-fried"></i>
+            <h5>Rencana Nutrisi</h5>
+            <p>Pola makan sehat yang disesuaikan dengan kebutuhan dan gaya hidup Anda.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="program-box">
+            <i class="bi bi-heart-pulse"></i>
+            <h5>Latihan Terstruktur</h5>
+            <p>Program latihan mudah diikuti untuk pembakaran lemak dan pembentukan otot.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="program-box">
+            <i class="bi bi-people"></i>
+            <h5>Dukungan Komunitas</h5>
+            <p>Kelompok motivasi dan konsultasi rutin untuk menjaga komitmen Anda.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4" style="color: var(--deep-red)">Testimoni Peserta</h2>
+      <div id="carouselTestimonials" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active text-center p-4">
+            <img src="asset/juara1.jpeg" class="testimonial-img" alt="Peserta 1">
+            <!-- <p class="mb-2">"Saya berhasil menurunkan 8kg dalam 2 bulan! Program ini sangat mudah diikuti."</p>
+            <small>— Ani, 29 tahun</small> -->
+          </div>
+          <div class="carousel-item text-center p-4">
+            <img src="asset/juara2.jpeg" class="testimonial-img" alt="Peserta 2">
+            <!-- <p class="mb-2">"Coach sangat supportif dan rencananya mudah diikuti di kehidupan sehari-hari."</p>
+            <small>— Budi, 34 tahun</small> -->
+          </div>
+          <div class="carousel-item text-center p-4">
+            <img src="asset/juara3.jpeg" class="testimonial-img" alt="Peserta 3">
+            <!-- <p class="mb-2">"Saya merasa lebih energik dan sehat setelah mengikuti program ini."</p>
+            <small>— Citra, 26 tahun</small> -->
+          </div>
+          <div class="carousel-item text-center p-4">
+            <img src="asset/testimoni 1.jpeg" class="testimonial-img" alt="Peserta 2">
+            <!-- <p class="mb-2">"Coach sangat supportif dan rencananya mudah diikuti di kehidupan sehari-hari."</p>
+            <small>— Budi, 34 tahun</small> -->
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coach Profile -->
+  <section id="about" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4" style="color: var(--deep-red)">Kenalan dengan Coach Anda</h2>
+      <div id="coachProfile">
+        <img src="asset/coach.jpeg" alt="Coach">
+        <h4 class="mt-3">Putri Wulandari (Coach Putri)</h4>
+        <p>Ahli nutrisi dan fitness berpengalaman membantu ratusan anda mencapai tujuan berat badan ideal.</p>
+        <a href="https://wa.link/1hvli6" class="btn btn-wa mt-2">Chat via WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Social -->
+  <section id="contact" class="py-5 bg-white text-center">
+    <div class="container">
+      <h3 class="mb-3" style="color: var(--deep-red)">Terhubung di Media Sosial</h3>
+      <a href="https://www.instagram.com/putriwulandari_sujati?igsh=MWVyenl1OHI2Z3Q2Ng==" class="social-btn"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.tiktok.com/@putri_mantan72kg?_t=ZS-8w6bsvHnBQd&_r=1" class="social-btn"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.facebook.com/share/19UvrguK8S/" class="social-btn"><i class="bi bi-facebook"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Coach Putri. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
