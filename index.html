@@ -12,40 +12,117 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
   <!-- Poppins Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
     :root {
-      --cream: #efdbbf;
-      --cherry: #ac3030;
-      --deep-red: #68181f;
-      --midnight: #121211;
+      --rosewater:        #FCECDF;
+      --crimson-velvet:   #9E122C;
+      --vibrant-tangerine:#D2431B;
+      --coral-blush:      #F99D90;
+      --golden-glow:      #FBCB77;
     }
-    body { font-family: 'Poppins', sans-serif; background-color: var(--cream); color: var(--midnight); }
-    a { text-decoration: none; }
-    .navbar { background-color: var(--midnight); }
-    .navbar-brand, .nav-link { color: var(--cream) !important; }
-    #mainBanner { background: var(--deep-red) url('https://via.placeholder.com/1200x600') center/cover no-repeat; color: #fff; padding: 100px 0; text-align: center; }
-    #mainBanner h1 { font-size: 2.5rem; font-weight: 600; }
-    #mainBanner p { font-size: 1.2rem; }
-    .btn-wa { background-color: var(--cherry); color: #fff; border: none; }
-    .btn-wa:hover { background-color: var(--deep-red); }
-    .social-btn { color: var(--midnight); font-size: 1.5rem; margin: 0 0.5rem; transition: transform .2s; }
-    .social-btn:hover { transform: scale(1.2); color: var(--cherry); }
-    /* Coach Profile */
-    #coachProfile img { width: 300px; height: 300px; object-fit: cover; border-radius: 20px; border: 4px solid var(--cherry); }
-.testimonial-img {
-  width: 100%;            /* fill its parent */
-  max-width: 450px;       /* but never grow beyond 450px */
-  height: auto;           /* keep original aspect ratio */
-  object-fit: cover;      /* fill the box cleanly */
-  border-radius: 20px;    /* rounded-square corners */
-  margin: 0 auto 15px;
-}
 
-    .carousel-control-prev-icon, .carousel-control-next-icon { filter: invert(100%); width: 40px; height: 40px; }
-    footer { background-color: var(--midnight); color: var(--cream); padding: 20px 0; text-align: center; }
-    /* Programs box */
-    .program-box { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 30px; background: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); min-height: 300px; }
-    .program-box i { font-size: 3rem; color: var(--cherry); margin-bottom: 20px; }
+    /* Base */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--rosewater);
+      color: var(--crimson-velvet);
+    }
+    a { text-decoration: none; }
+
+    /* Navbar */
+    .navbar {
+      background-color: var(--crimson-velvet);
+    }
+    .navbar-brand, .nav-link {
+      color: var(--rosewater) !important;
+    }
+
+    /* Main Banner */
+    #mainBanner {
+      background: var(--vibrant-tangerine) url('https://via.placeholder.com/1200x600') center/cover no-repeat;
+      color: var(--rosewater);
+      padding: 100px 0;
+      text-align: center;
+    }
+    #mainBanner h1 { font-size: 2.5rem; font-weight: 600; }
+    #mainBanner p  { font-size: 1.2rem; }
+
+    /* CTA Button */
+    .btn-wa {
+      background-color: var(--coral-blush);
+      color: var(--rosewater);
+      border: none;
+    }
+    .btn-wa:hover {
+      background-color: var(--vibrant-tangerine);
+    }
+
+    /* Social Icons */
+    .social-btn {
+      color: var(--crimson-velvet);
+      font-size: 1.5rem;
+      margin: 0 0.5rem;
+      transition: transform .2s;
+    }
+    .social-btn:hover {
+      transform: scale(1.2);
+      color: var(--vibrant-tangerine);
+    }
+
+    /* Programs */
+    .program-box {
+      height: 100%;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      padding: 30px;
+      background: var(--rosewater);
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      min-height: 300px;
+    }
+    .program-box i {
+      font-size: 3rem;
+      color: var(--crimson-velvet);
+      margin-bottom: 20px;
+    }
+
+    /* Testimonials */
+    #testimonials {
+      background-color: var(--golden-glow);
+    }
+    #testimonials h2 {
+      color: var(--crimson-velvet) !important;
+    }
+    .testimonial-img {
+      width: 100%;
+      max-width: 450px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 20px;
+      margin: 0 auto 15px;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(100%);
+      width: 40px; height: 40px;
+    }
+
+    /* Coach Profile */
+    #coachProfile img {
+      width: 300px; height: 300px;
+      object-fit: cover;
+      border-radius: 20px;
+      border: 4px solid var(--crimson-velvet);
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--crimson-velvet);
+      color: var(--rosewater);
+      padding: 20px 0;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -71,7 +148,7 @@
   <section id="mainBanner">
     <div class="container">
       <h1>Transformasikan Tubuh Anda Bersama Coach Profesional</h1>
-      <p>Program diet yang dipersonalisasi untuk hasil nyata dan berkelanjutan.</p>
+      <p>Program diet online yang dipersonalisasi untuk hasil nyata dan berkelanjutan.</p>
       <a href="#contact" class="btn btn-wa btn-lg mt-3">Hubungi Coach Sekarang</a>
     </div>
   </section>
@@ -79,13 +156,13 @@
   <!-- Programs -->
   <section id="programs" class="py-5">
     <div class="container text-center">
-      <h2 class="mb-4" style="color: var(--deep-red)">Apa yang Anda Dapatkan?</h2>
+      <h2 class="mb-4" style="color: var(--crimson-velvet)">Apa yang Anda Dapatkan?</h2>
       <div class="row g-4">
         <div class="col-md-4">
           <div class="program-box">
             <i class="bi bi-egg-fried"></i>
             <h5>Rencana Nutrisi</h5>
-            <p>Pola makan sehat yang disesuaikan dengan kebutuhan dan gaya hidup Anda.</p>
+            <p>Pola makan sehat dan nutrisi yang disesuaikan dengan kebutuhan dan gaya hidup Anda.</p>
           </div>
         </div>
         <div class="col-md-4">
@@ -106,32 +183,23 @@
     </div>
   </section>
 
-
   <!-- Testimonials -->
-  <section id="testimonials" class="py-5 bg-light">
+  <section id="testimonials" class="py-5">
     <div class="container">
-      <h2 class="text-center mb-4" style="color: var(--deep-red)">Testimoni Peserta</h2>
+      <h2 class="text-center mb-4">Testimoni Peserta</h2>
       <div id="carouselTestimonials" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active text-center p-4">
             <img src="asset/juara1.jpeg" class="testimonial-img" alt="Peserta 1">
-            <!-- <p class="mb-2">"Saya berhasil menurunkan 8kg dalam 2 bulan! Program ini sangat mudah diikuti."</p>
-            <small>— Ani, 29 tahun</small> -->
           </div>
           <div class="carousel-item text-center p-4">
             <img src="asset/juara2.jpeg" class="testimonial-img" alt="Peserta 2">
-            <!-- <p class="mb-2">"Coach sangat supportif dan rencananya mudah diikuti di kehidupan sehari-hari."</p>
-            <small>— Budi, 34 tahun</small> -->
           </div>
           <div class="carousel-item text-center p-4">
             <img src="asset/juara3.jpeg" class="testimonial-img" alt="Peserta 3">
-            <!-- <p class="mb-2">"Saya merasa lebih energik dan sehat setelah mengikuti program ini."</p>
-            <small>— Citra, 26 tahun</small> -->
           </div>
           <div class="carousel-item text-center p-4">
-            <img src="asset/testimoni 1.jpeg" class="testimonial-img" alt="Peserta 2">
-            <!-- <p class="mb-2">"Coach sangat supportif dan rencananya mudah diikuti di kehidupan sehari-hari."</p>
-            <small>— Budi, 34 tahun</small> -->
+            <img src="asset/testimoni 1.jpeg" class="testimonial-img" alt="Peserta 4">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="prev">
@@ -149,22 +217,22 @@
   <!-- Coach Profile -->
   <section id="about" class="py-5">
     <div class="container text-center">
-      <h2 class="mb-4" style="color: var(--deep-red)">Kenalan dengan Coach Anda</h2>
+      <h2 class="mb-4" style="color: var(--crimson-velvet)">Kenalan dengan Coach Anda</h2>
       <div id="coachProfile">
         <img src="asset/coach.jpeg" alt="Coach">
         <h4 class="mt-3">Putri Wulandari (Coach Putri)</h4>
-        <p>Ahli nutrisi dan fitness berpengalaman membantu ratusan anda mencapai tujuan berat badan ideal.</p>
+        <p>Coach Diet bersertifikasi di bidang Nutrisi & Kebugaran membantu Anda mencapai berat badan ideal.</p>
         <a href="https://wa.link/1hvli6" class="btn btn-wa mt-2">Chat via WhatsApp</a>
       </div>
     </div>
   </section>
 
   <!-- Contact & Social -->
-  <section id="contact" class="py-5 bg-white text-center">
+  <section id="contact" class="py-5 text-center" style="background-color: var(--golden-glow);">
     <div class="container">
-      <h3 class="mb-3" style="color: var(--deep-red)">Terhubung di Media Sosial</h3>
-      <a href="https://www.instagram.com/putriwulandari_sujati?igsh=MWVyenl1OHI2Z3Q2Ng==" class="social-btn"><i class="bi bi-instagram"></i></a>
-      <a href="https://www.tiktok.com/@putri_mantan72kg?_t=ZS-8w6bsvHnBQd&_r=1" class="social-btn"><i class="fab fa-tiktok"></i></a>
+      <h3 class="mb-3" style="color: var(--crimson-velvet)">Terhubung di Media Sosial</h3>
+      <a href="https://www.instagram.com/putriwulandari_sujati" class="social-btn"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.tiktok.com/@putri_mantan72kg" class="social-btn"><i class="fab fa-tiktok"></i></a>
       <a href="https://www.facebook.com/share/19UvrguK8S/" class="social-btn"><i class="bi bi-facebook"></i></a>
     </div>
   </section>
